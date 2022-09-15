@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Temperature Converter</h1>
+    <h3>Type a value in the F field to convert the value to C:</h3>
+    <label>Fahrenheit     <input type="text" name="text" id="F"></label>
+    <button type="button" onclick="Convert()">Convert</button>
+    <p id="result"></p>
+</div>
+<script>
+ function Convert() {
+     let a = parseInt(document.getElementById("F").value);
+     let b = (a - 32) / 1.8;
+     document.getElementById("result").innerHTML = 'Celcius: ' + b;
+ }
+</script>
+</body>
+</html>
